@@ -1,4 +1,0 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Notebook of Khun8'
-theme = "hugo-xterm"
