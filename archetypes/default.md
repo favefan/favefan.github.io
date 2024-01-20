@@ -1,5 +1,6 @@
 ---
 title: ""
+timezone: UTC+8
 date:
 description: ""
 tags: []
@@ -8,6 +9,6 @@ featured_image: ""
 images: []
 categories:
 comment: false
-draft: true
+draft: false
 hidden: false
 ---
