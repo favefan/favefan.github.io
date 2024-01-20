@@ -1,7 +1,6 @@
 ---
 title: "陈硕的网络编程实践 1-9 概览与TTCP"
-timezone: UTC+8
-date: 2024-01-20T20:20:20
+date: 2024-01-19T20:20:20
 description: "听陈硕的网络编程实践的记录, 1-9节视频, 主要介绍了课程的概要以及TTCP的代码和原理, 还有一些TCP的坑."
 tags: [Chenshuo, C/C++, Video_Notes]
 categories: NetworkProgramming
