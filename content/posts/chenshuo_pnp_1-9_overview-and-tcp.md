@@ -5,7 +5,7 @@ tags: [C/C++, Network_Programming, Chen_Shuo]
 
 # 陈硕的网络编程实践 1-9 概览与TTCP
 
-## 01 网络编程概要
+## 网络编程概要
 
 ### 分层的网络
 
@@ -25,9 +25,9 @@ tags: [C/C++, Network_Programming, Chen_Shuo]
 * TCP 的自连接: TCP 客户端在与本机的 TCP 服务器建立连接时, 服务器未正常启动, 则有可能客户端自己与自己连接
 * 非阻塞网络编程
 
-## 02 一个 TCP 的简单实验
+## 一个 TCP 的简单实验
 
-## 03 课程内容大纲
+## 课程内容大纲
 
 ### 基本的非并发例子 non-concurrent
 
@@ -58,7 +58,7 @@ tags: [C/C++, Network_Programming, Chen_Shuo]
 * 服务器系统的容量管理
 * ...
 
-## 04 回顾基础的 Sockets (TTCP)
+## 回顾基础的 Sockets (TTCP)
 
 ### 我们关心的性能指标
 
@@ -100,7 +100,7 @@ struct PayloadMessage {
 };
 ```
 
-## 05 TTCP 代码概览
+## TTCP 代码概览
 
 使用 c 与 sockets 的阻塞代码示例 (收与应答):
 
@@ -258,9 +258,9 @@ void transmit(const Options& opt)
 }
 ```
 
-## 06 使用 TTCP 进行网络传输性能测试
+## 使用 TTCP 进行网络传输性能测试
 
-## 07 阻塞 IO 下的TTCP实验 (echo)
+## 阻塞 IO 下的TTCP实验 (echo)
 
 *recipes/tpc/echo.cc & echi-client.cc*
 
@@ -278,7 +278,7 @@ void transmit(const Options& opt)
 
 字节流协议还是应该加上自己的分包措施.
 
-## 08  TCP self-connection 自连接
+## TCP self-connection 自连接
 
 *net.ipv4.ip_local_port_range*
 
@@ -329,7 +329,7 @@ else:
     }
     ```
 
-## 09 TTCP 的扩展练习
+## TTCP 的扩展练习
 
 * 测量吞吐量 throughout (message/s) 和延迟 latency (百分位数需要数组来辅助计算, 直方图)
 * 服务器支持并发的客户端连接 (block: thread-per-connection, non-block: epoll or poll, etc.)
