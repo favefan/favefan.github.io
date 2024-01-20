@@ -9,4 +9,5 @@ images: []
 categories:
 comment: false
 draft: true
+hidden: false
 ---
