@@ -1,9 +1,7 @@
 ---
-title: 陈硕_网络编程_1-9_概览与TTCP
+title: 陈硕的网络编程实践 1-9 概览与TTCP
 tags: [C/C++, Network_Programming, Chen_Shuo]
 ---
-
-# 陈硕的网络编程实践 1-9 概览与TTCP
 
 ## 网络编程概要
 
