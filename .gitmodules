@@ -1,9 +1,0 @@
-[submodule "themes/hugo-xterm"]
-	path = themes/hugo-xterm
-	url = https://ghproxy.com/https://github.com/manid2/hugo-xterm.git
-[submodule "themes/smigle"]
-	path = themes/smigle
-	url = https://gitlab.com/ian-s-mcb/smigle-hugo-theme.git
-[submodule "themes/ink-free"]
-	path = themes/ink-free
-	url = https://github.com/chollinger93/ink-free
