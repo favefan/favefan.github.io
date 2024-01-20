@@ -1,88 +1,10 @@
 baseURL = "https://favefan.github.io/"
+DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "en-us"
-title = "Minebook"
-theme = "ink-free"
-paginate = 5
-
-copyright = "© Copyright Khun (favefan) 2024"
-# Demo only
-#ignoreErrors = ["error-missing-instagram-accesstoken"]
-
-[permalinks]
-  posts = "/:year/:month/:title"
-
-[params]
-	subtitle = "On the way."
-
-	# Optional 64x64 avatar image.
-	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
-
-	featherIconsCDN = false
-
-	# Site color - dark/light/auto
-	mode = "auto"
-
-	# Enable a table of contents:
-	# Either "static"/true, "floating", "both", or "none" (default: static)
-	# The floating TOC dissapears on mobile and adds 200px vertical space
-	toc = "floating"
-	# Whether to truncate everything but H1/H2 headings if the last element in a TOC isn't visible. Enabled by default
-	enableTocTrunate = true
-
-	# Max tags
-	maxTags = 7
-
-	# Define words per minute to approximate reading time
-	wpm = 250
-
-	# Stupid footers :)
-	footers = [ 
-		"Talk is cheap, show me the code",
-		"Nothing to say, but do it"
-	]
-
-	# Github base url
-	github = "https://github.com/favefan/favefan.github.io"
-
-	# For statistics, we can compare the total word count against a book of your choice
-	statisticsEnabled = true
-	referenceBookWords = 11500.0
-	referenceBook = "The Metamorphosis"
-	referenceAuthor = "Franz Kafka"
-
-# Nav.
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
-name = "Tags & Stats"
-url = "/tags"
-weight = 4
-
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/favefan/"
-
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
-
-[taxonomies]
-   tag = "tags"
+title = "MineBook"
+copyright = "@ Khun (favefan) 2024"
+theme = "diary"
+# googleAnalytics = "UA-123-45"
 
 [markup]
   [markup.highlight]
@@ -93,10 +15,52 @@ url = "/index.xml"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "github"
+    style = "perldoc"
     tabWidth = 4
 
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = true
-    startLevel = 2 
+[params]
+subtitle = "On the way."
+enableGitalk = false
+enableGiscus = false
+
+# Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
+clarity = "abcdefghzd"
+
+# Twitter Card and Open Graph settings
+#enableOpenGraph = true
+#enableTwitterCards = true
+#title = "My Blog" # will set 'og:site_name'
+#description = "My HomePage Description"  # will set 'og:description'
+
+#[params.gitalk]
+#  owner = "user"
+#  repo = "repo name"
+#  client_id = "your client id"
+#  client_secret = "your client secret"
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+#[params.utterances]
+#repo="your repo"
+#term="[ENTER TERM HERE]"
+#label="your label"
+#theme="github-light"
+
+
+[[menu.main]]
+url = "/categories"
+name = "Categories"
+weight = 2
+[[menu.main]]
+url = "/tags"
+name = "Tags"
+weight = 3
+[[menu.main]]
+url = "/posts"
+name = "Archive"
+weight = 1
+[[menu.main]]
+url = "/index.xml"
+name = "RSS Feed"
+weight = 4
